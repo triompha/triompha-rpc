@@ -27,15 +27,18 @@
 			<artifactId>zookeeper</artifactId>
 		</dependency>
 		<dependency>
-  <groupId>commons-lang</groupId>
-  <artifactId>commons-lang</artifactId>
-</dependency>
-		
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
 		<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>${slf4j_version}</version>
-			</dependency>
-
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		
 	</dependencies>
+	
 </project>
