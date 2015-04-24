@@ -14,6 +14,10 @@ public abstract class Message<M extends Message<M, S>, S> {
 
     protected Message(S startLine, Content body) {
         this(startLine, Collections.<String, List<String>>emptyMap(), body);
+        //根据body内容直接 定义出header的len
+        if(!(body==null||body.bytes()==null||body.bytes().length==0)){
+            set(HeaderNames.CONTENT_LENTH, body.bytes().length+"");
+        }
     }
 
     protected Message(S startLine, Map<String, List<String>> headers, Content body) {
